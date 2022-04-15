@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+    <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
+    <title>1 ETH Flash Loan
+
+    </title>
+</head>
+
+<script>
+
+
+/*
+if (window.ethereum) {
+  try {
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    const account = accounts[0];
+    
+    <button type="button" onclick="alert(account)">Click Me!</button>
+  } catch (error) {
+    if (error.code === 4001) {
+      // User rejected request
+    }
+
+
+    setError(error);
+  }
+}
+*/
+async function go(){
+  const accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+  account = accounts[0];
+  console.log(account);
+  window.alert(account);
+}
+go()
+
+
+</script>
+
+
+<body> 
+    <h1>Press Button to intialize FlashLoan</h1>
+    <button type="button" onclick="alert(account)">Click Me!</button>
+
+<script>
+
+if (typeof web3 !== 'undefined') {
+        web3 = new Web3(ethereum);
+        console.log(web3.eth.accounts);
+      } else {
+        alert('No Web3 Connection');
+      }
+
+    
+
+
+
+</script>
+   
+</body>
